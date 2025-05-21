@@ -35,4 +35,17 @@ Inicie o servidor HTTPS:
 
 uvicorn app.main:app --host 0.0.0.0 --port 443 --ssl-keyfile=certs/key.pem --ssl-certfile=certs/cert.pem
 
-Estrutura do projeto
+Estrutura do projeto:
+
+app/
+├── main.py
+├── models.py
+├── database.py
+├── schemas.py
+├── routers/
+│   ├── auth.py
+│   ├── produtos.py
+│   └── pedidos.py
+certs/
+├── cert.pem
+└── key.pem
